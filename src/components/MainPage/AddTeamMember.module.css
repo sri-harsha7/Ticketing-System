@@ -1,0 +1,52 @@
+.addTeamMember{
+    width: 780px;
+    height: 540px;
+    border: 1px solid black;
+   padding: 20px 20px;
+   border-radius:25px ;
+   background: none;
+   background-color: #ffffff;
+   text-align: left;
+   position: absolute;
+   left: 450px;
+   top: 150px;
+}
+
+.save{
+    width: 222px;
+    height: 50px;
+    background-color: #184e7f;
+    color: white;
+    border-radius: 17px;
+}
+.cancel{
+    width: 222px;
+    height: 50px;
+    background-color: #F6F8FA;
+    color:#AFAFAF;
+    border-radius: 17px;
+}
+.buttons{
+    display: flex;
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+ label,input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30px;
+   align-items: center;
+   justify-content: flex-start;
+
+}
+input[type="text"], input[type="number"], input[type="email"]{
+    margin: 12px 0;
+}
+.designation{
+    margin-top: 10px;
+
+    width: 100%;
+    height: 35px
+
+}

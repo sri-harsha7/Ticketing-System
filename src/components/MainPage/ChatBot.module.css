@@ -1,0 +1,131 @@
+
+.chatbotContainer {
+    width: 400px;
+    background-color: #f1f1f1;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+  }
+  
+  .chatbotHeader {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .botAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+  }
+  
+  .botName {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background: transparent;
+  }
+  
+
+  
+  .chatbotMessages {
+  
+    padding: 20px 10px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    
+  }
+  
+  
+  .botMessage {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+     
+  }
+  .sender{
+   
+    padding: 5px 20px;
+    display: flex;
+    gap: 4px;
+    width: 100%;
+    justify-content: flex-end;
+  
+   
+
+
+  }
+  form{
+    width: 100%;
+     border: 1px solid black;
+    padding: 7px 13px;
+    border-radius: 10px;
+    background-color: white;
+   
+  }
+  form input[type="text"], form input[type="email"]{
+    background: none;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+  }
+
+  .form{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   
+  
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+   background: none;
+  }
+
+  .thankYou{
+    width: 204px;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #184E7F;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .chatbotInput {
+    display: flex;
+    align-items: center;
+ 
+    background-color: white;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chatbotInput input {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .sendButton {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #7f8c8d;
+    cursor: pointer;
+    
+  }
+  

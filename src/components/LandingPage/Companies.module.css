@@ -1,0 +1,17 @@
+.Companies{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 100%;
+   height: 144px;
+   padding: 0px 120px;
+   gap: 40px;
+   background-color:#E1EEFA
+}
+.Companies img{
+    width: 154px;
+    height: 48px;
+    object-fit: cover;
+    background: transparent;
+}

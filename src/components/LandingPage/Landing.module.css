@@ -1,0 +1,23 @@
+.landing{
+    position: relative;
+}
+
+.chat{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1;
+}
+.chatBot{
+    
+
+    position: fixed;
+    right: 30px;
+    bottom: 110px;
+    z-index: 1;
+
+ 
+}

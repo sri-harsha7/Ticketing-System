@@ -1,0 +1,31 @@
+.deleteTeamMember {
+    width: 490px;
+    height: 150px;
+    border: 1px solid black;
+    position: absolute;
+    right: 30px;
+    padding:  20px;
+    border-radius: 25px;
+    background: none;
+    background-color: #ffffff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.cancel{
+    width: 222px;
+    height: 50px;
+    background-color: #F6F8FA;
+    color:#AFAFAF;
+    border-radius: 17px;
+}
+.delete{
+    width: 222px;
+    height: 50px;
+    background-color: #184e7f;
+    color: white;
+    border-radius: 17px;
+}

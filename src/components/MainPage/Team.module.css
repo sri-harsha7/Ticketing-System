@@ -1,0 +1,39 @@
+.button{
+    background-color: #303404;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;}
+.add{
+        text-align: right;
+    }
+
+    .container{
+        width: 100%;
+      
+    }
+    .addTeamMember{
+        width: 780px;
+        height: 520px;
+    }
+
+    .save{
+        width: 222px;
+        height: 50px;
+        background-color: #184e7f;
+        color: white;
+        border-radius: 17px;
+    }
+    .cancel{
+        width: 222px;
+        height: 50px;
+        background-color: #F6F8FA;
+        color:#AFAFAF;
+        border-radius: 17px;
+    }

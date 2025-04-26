@@ -1,0 +1,84 @@
+.payment{
+    
+    margin: 0 120px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+   
+}
+
+.paymentHeadings{
+    width: 711px;
+    height: 127px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+   
+
+}
+
+.paymentHeadings h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #30404D;
+    background: transparent;
+}
+.paymentHeadings p{
+    font-size: 20px;
+    color: #30404D;
+    font-weight: 400;
+    opacity: 70;
+}
+.paymentPlans{
+    display: flex;
+    gap: 15px;
+    
+   
+
+}
+.plan{
+    width: 588px;
+    height: 709px;
+    background-color: #ffff;
+    position: relative;
+    background: #ffff;
+    padding: 36px;
+    border-radius: 10px;
+}
+.list{
+    margin-top: 30px;
+    padding-left: 20px;
+    background: none;
+}
+
+.list li{
+    list-style-type:square;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #30404D;
+    font-weight: 400;
+    opacity: 70;
+    
+}
+/* Check icon */
+
+
+.button{
+    width: 512px;
+    height: 72px;
+    border-radius: 64px;
+    position: absolute;
+    bottom: 20px;
+    color: #244779;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: barlow;
+
+}

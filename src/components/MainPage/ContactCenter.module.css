@@ -1,0 +1,488 @@
+/* .contactCenter{
+    display: flex;
+  
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 100vh;
+}
+.Contact{
+    display: flex;
+    flex-direction: column;
+    padding:40px;
+    flex-basis: 20%;
+    border: 1px solid lightgray;
+
+   
+
+}
+img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.chats{
+    display: flex;
+    flex-direction: column;
+}
+.chat1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.chat2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ticketId{
+    display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   flex-basis: 50%;
+   border: 1px solid lightgray;
+}
+.ticket{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+  
+}
+
+.chatArea{
+    text-align: left;
+    width: 100%;
+    padding: 25px;
+    border: 1px soild lightgray;
+}
+
+
+.chat {
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+   gap: 10px;
+    align-items: left;
+    flex-basis: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+   
+    
+}
+
+input{
+    padding-bottom: 10px;
+    border-radius: 10px;
+    
+   
+}
+input[type="text"],input[type="number"],  input[type="email"]{
+    margin: 20px 0;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin:20px 0;
+   
+}
+select{
+    width: 100%;
+    padding-bottom: 10px;
+    border-radius: 10px;
+   
+}
+.ticketStatus{
+    display: flex;
+    align-self: center;
+} */
+
+/* Main Container */
+.contactCenter {
+    display: flex;
+  
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /* Left Sidebar - Chat List */
+  .chatListContainer {
+  
+    border-right: 1px solid #e0e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    gap: 10px;
+  }
+  
+  .sectionHeader {
+  
+    border-bottom: 1px solid gray;
+  }
+  
+  .sectionHeader h2 {
+    margin-bottom: 20px;
+  }
+  
+  .subHeader {
+    margin: 5px 0 0 0;
+    font-size: 20px;
+    color: #666;
+  }
+  
+  .chatList {
+    padding: 10px 0;
+  }
+  
+  .chatItem {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 6px;
+  }
+  
+  .chatItem:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .activeChat {
+    background-color: #e6f2ff;
+    border-left: 3px solid #4d90fe;
+  }
+  
+  .profileImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+  }
+  
+  .chatInfo h5 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .chatInfo p {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    color: #666;
+  }
+  
+  /* Main Chat Area */
+  .mainChatArea {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    border-right: 1px solid lightgray;
+  }
+  
+  .chatHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .ticketId {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .homeIcon {
+    width: 20px;
+    height: 20px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .chatContent {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+  }
+  
+  .chatDate {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    margin: 15px 0;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+  }
+  
+  .messagesContainer {
+    flex: 1;
+    padding-bottom: 20px;
+  }
+  
+  .message {
+    background-color: #f0f4f8;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    max-width: 80%;
+  }
+  
+  .message h5 {
+    margin: 0 0 6px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .userChat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .message p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  .messageForm {
+    margin-top: auto;
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .messageInput {
+    width: 100%;
+    min-height: 80px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    font-family: inherit;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  
+  .messageInput:focus {
+    outline: none;
+    border-color: #4d90fe;
+  }
+  
+  .actionButtons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .sendButton {
+    padding: 8px 16px;
+    background-color: #4d90fe;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .sendButton:hover {
+    background-color: #357ae8;
+  }
+  
+  /* Right Sidebar - Contact Details */
+  .contactDetails {
+    position: relative;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;   
+  }
+  
+  .detailsHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .detailsHeader p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .detailsSection {
+    margin-bottom: 25px;
+  }
+  
+  .detailsSection h5 {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .detailField {
+    margin-bottom: 12px;
+  }
+  
+  .detailField input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+  }
+  
+  .teamSection {
+    margin-bottom: 25px;
+  }
+  
+  .selectWrapper {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .selectWrapper select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    appearance: none;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .transferButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .transferButton:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Modals */
+  .modalOverlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 100px;       display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+  }
+  
+  .modal {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .modal h4 {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .modalContent {
+    margin-bottom: 20px;
+  }
+  
+  .modalSelect {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .modalButtons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .cancelButton {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .confirmButton {
+    padding: 8px 16px;
+    background-color: #4d90fe;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Responsive adjustments
+  @media (max-width: 1200px) {
+    .contactCenter {
+      grid-template-columns: 240px 1fr 240px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .contactCenter {
+      grid-template-columns: 200px 1fr;
+    }
+    .contactDetails {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contactCenter {
+      grid-template-columns: 1fr;
+    }
+    .chatListContainer {
+      display: none;
+    }
+  } */

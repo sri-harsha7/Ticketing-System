@@ -1,0 +1,76 @@
+.home{
+    padding: 20px;
+    width: 100%;
+}
+.input{
+    padding: 20px;
+}
+input[type="text"]{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+.tickets{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.ticket{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    border: 1px solid lightgray;
+}
+.ticketInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.ticketInfo p{
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+.ticketId{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.ticketTime{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.from{
+    display: flex;
+    justify-content: space-between;
+}
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.profileInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.profileInfo h5{
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+.open{
+    text-align: center;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
