@@ -8,8 +8,9 @@ import { Link } from "react-router-dom";
 const SignUp = () => {
   const navigate = useNavigate();
 
-  const auth = () => {
-    navigate("/main");
+  const auth = (e) => {
+    e.preventDefault(); // Prevent default form submission
+    navigate("/main/home"); // Navigate to the correct path
   };
 
   return (
@@ -19,7 +20,7 @@ const SignUp = () => {
           <img src={logo} alt="" className={styles.logo} />
         </div>
         <div className={styles.form}>
-          <form action="">
+          <form action="/main/home" method="post" onSubmit={auth}>
             <div
               style={{
                 display: "flex",
@@ -77,9 +78,7 @@ const SignUp = () => {
               </p>
             </div>
             <div>
-              <button className={styles.button} onClick={auth}>
-                Sign Up
-              </button>
+              <button className={styles.button}>Sign Up</button>
             </div>
           </form>
           <div className={styles.bottom}>

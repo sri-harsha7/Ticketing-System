@@ -1,5 +1,10 @@
 import styles from "./Payment.module.css";
+import { useNavigate } from "react-router-dom";
 const Payment = () => {
+  const navigate = useNavigate();
+  const handleSignUp = () => {
+    navigate("/signup");
+  };
   return (
     <div className={styles.payment}>
       <div className={styles.paymentHeadings}>
@@ -67,7 +72,9 @@ const Payment = () => {
             </div>
           </div>
           <div>
-            <button className={styles.button}>SIGN UP FOR STARTER</button>
+            <button onClick={handleSignUp} className={styles.button}>
+              SIGN UP FOR STARTER
+            </button>
           </div>
         </div>
         <div className={styles.plan}>
@@ -130,7 +137,9 @@ const Payment = () => {
             </div>
           </div>
           <div>
-            <button className={styles.button}>SIGN UP FOR STARTER</button>
+            <button onClick={handleSignUp} className={styles.button}>
+              SIGN UP FOR STARTER
+            </button>
           </div>
         </div>
       </div>

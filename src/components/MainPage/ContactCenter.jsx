@@ -14,7 +14,7 @@ const ContactCenter = ({ teamMembers }) => {
         month: "long",
         day: "numeric",
         year: "numeric",
-      }),
+      }), //Function to get current date from chatGPT
       messages: [
         member.role === "Admin" ? "I have a Question" : "Ask me Anything",
       ],

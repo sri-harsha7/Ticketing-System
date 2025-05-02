@@ -7,8 +7,11 @@ import Bot from "./Bot";
 import Team from "./Team";
 import Settings from "./Settings";
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
+  const navigate = useNavigate();
   const [activeComponent, setActiveComponent] = useState("home");
   const [teamMembers, setTeamMembers] = useState([
     {
@@ -45,6 +48,7 @@ const Main = () => {
 
   const handleComponentClick = (component) => {
     setActiveComponent(component);
+    navigate(`/main/${component}`);
   };
 
   return (
@@ -59,6 +63,7 @@ const Main = () => {
               height: "45px",
               objectFit: "cover",
             }}
+            alt="Logo"
           />
         </div>
         <div className={styles.icons}>
@@ -114,47 +119,47 @@ const Main = () => {
             <div>{activeComponent === "settings" && <p>Settings</p>} </div>
           </div>
           <div className={styles.icon} style={{ marginTop: "200px" }}>
-            <i class="bi bi-person-circle"></i>
+            <i className="bi bi-person-circle"></i>
           </div>
           <div>
             <p>Profile</p>
           </div>
         </div>
       </aside>
-      {activeComponent === "home" && (
-        <div className={styles.home}>
-          <Home></Home>
-        </div>
-      )}
-      {activeComponent === "contact" && (
-        <div className={styles.ContactCenter}>
-          <ContactCenter teamMembers={teamMembers}></ContactCenter>
-        </div>
-      )}
-      {activeComponent === "analytics" && (
-        <div className={styles.analytics}>
-          <Analytics></Analytics>
-        </div>
-      )}
-      {activeComponent === "bot" && (
-        <div className={styles.bot}>
-          <Bot></Bot>
-        </div>
-      )}
-      {activeComponent === "team" && (
-        <div className={styles.team}>
-          <Team
-            teamMembers={teamMembers}
-            onAddMember={addNewMember}
-            onDeleteMember={deleteMember}
+
+      <main className={styles.mainContent}>
+        <Routes>
+          {activeComponent === "home" && (
+            <Route path="/home" element={<Home />} />
+          )}
+
+          {activeComponent === "contact" && (
+            <Route
+              path="/contact"
+              element={
+                <ContactCenter
+                  teamMembers={teamMembers}
+                  className={styles.ContactCenter}
+                />
+              }
+            />
+          )}
+
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/bot" element={<Bot />} />
+          <Route
+            path="/team"
+            element={
+              <Team
+                teamMembers={teamMembers}
+                onAddMember={addNewMember}
+                onDeleteMember={deleteMember}
+              />
+            }
           />
-        </div>
-      )}
-      {activeComponent === "settings" && (
-        <div className={styles.settings}>
-          <Settings></Settings>
-        </div>
-      )}
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
+      </main>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 .home{
     padding: 20px;
-    width: 100%;
+    width: 90vw;
 }
 .input{
     padding: 20px;
@@ -32,12 +32,16 @@ input[type="text"]{
 .ticketInfo p{
     font-size: 17px;
     color: black;
-    font-weight: bold;
+    
+   
 }
 .ticketId{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    font-weight: bold;
+    
+
 }
 .ticketTime{
     display: flex;
@@ -73,4 +77,5 @@ input[type="text"]{
     font-size: 17px;
     color: black;
     font-weight: bold;
+    padding: 30px;
 }

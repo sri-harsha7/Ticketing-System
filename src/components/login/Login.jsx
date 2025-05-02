@@ -7,9 +7,11 @@ import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
 
-  const auth = () => {
-    navigate("/main");
+  const auth = (e) => {
+    e.preventDefault(); // Prevent default form submission
+    navigate("/main/home"); // Navigate to the correct path
   };
+
   return (
     <div className={styles.login}>
       <div className={styles.right}>
@@ -17,22 +19,22 @@ const Login = () => {
           <img src={logo} alt="" className={styles.logo} />
         </div>
         <div className={styles.form}>
-          <form action="">
+          <form action="/main/home" method="post" onSubmit={auth}>
             <h1 style={{ marginBottom: "25px" }}>Sign in to your Plexify</h1>
             <div style={{ display: "flex", flexDirection: "column" }}>
               <label htmlFor="username" style={{ paddingBottom: "10px" }}>
                 Username :
               </label>
-              <input type="text" name="username" />
+              <input type="text" name="username" required />
             </div>
             <div style={{ display: "flex", flexDirection: "column" }}>
               <label htmlFor="password" style={{ paddingBottom: "10px" }}>
                 Password :
               </label>
-              <input type="password" name="password" />
+              <input type="password" name="password" required />
             </div>
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <button className={styles.button} onClick={auth}>
+              <button type="submit" className={styles.button}>
                 Login
               </button>
             </div>
